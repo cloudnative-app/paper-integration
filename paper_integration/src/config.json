@@ -1,0 +1,43 @@
+{
+    "source_dir": "source",
+    "output_dir": "output",
+    "download_dir": "downloads",
+    "file_patterns": {
+        "acm": ["acm_converted_*.csv"],
+        "ieee": ["export*.csv"],
+        "scopus": ["scopus*.csv"],
+        "wos": ["wos*.xls", "wos*.xlsx"],
+        "bib": ["*.bib"]
+    },
+    "paper_mapping": {
+        "author": ["author", "authors", "author(s)", "author names", "author full names"],
+        "title": ["title", "document title", "article title", "publication title"],
+        "year": ["year", "publication year", "pub year"],
+        "abstract": ["abstract"],
+        "doi": ["doi", "doi link"],
+        "keywords": ["keywords", "author keywords", "ieee terms"],
+        "publication": ["booktitle", "journal", "publication", "source title"],
+        "publisher": ["publisher"],
+        "pages": ["pages", "page start", "page end"],
+        "url": ["url", "link"],
+        "volume": ["volume"],
+        "number": ["number", "issue"],
+        "month": ["month", "publication month"],
+        "issn": ["issn"],
+        "isbn": ["isbn"],
+        "document_type": ["document type"]
+    },
+    "proceedings_mapping": {
+        "title": ["title"],
+        "year": ["year"],
+        "publisher": ["publisher"],
+        "location": ["location"],
+        "abstract": ["abstract"],
+        "isbn": ["isbn"],
+        "address": ["address"],
+        "document_type": ["document type"]
+    },
+    "timeout": 30,
+    "retry_count": 3,
+    "delay": 2
+} 
